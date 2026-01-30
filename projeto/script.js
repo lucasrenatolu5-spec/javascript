@@ -1,25 +1,30 @@
-// função entrar
+document.write("<br> Escolha seu pedido: <br>");
+document.write("<br> 0 - Sorvete / 1 - Suco <br>");
+document.write("<br> 2 - Coca-cola / 3 - Agua gelada <br><br>");
 
-function entrar(){
-    var area = document.getElementById("area");
-    var texto = prompt('digite seu nome: ');
+//swich
+function pedir(){
+    
+      x = (prompt("O que deseja pedir?"));
 
-    if(texto == '' || texto == null){
-        alert('Digite seu nome novamente!')
-        area.innerHTML = 'Bem vindo ...';
-    }else{
-        area.innerHTML = 'Bem vindo'+ ' ' + texto;
-    }
-}
+switch(x){
 
-function entrar2(nome){
-    var area = document.getElementById("area2");
-    var texto = prompt('digite seu sobrenome: ');
-    var idade = prompt('Digite sua idade: ')
-    if(idade == "" || idade == null){
-        alert('Digite sua idade novamente! ')
-        area.innerHTML = 'bem vindo ...';
-    }else{
-        area.innerHTML = nome + " " + texto+ ' ' + 'sua idade é ' + idade
-    }
+    case "0":
+        alert("você pediu sorvete!");
+        break;
+    case "1":
+        alert("Você pediu suco!");
+        break;
+    case "2": 
+        alert("Você pediu Coca-cola!");
+        break;
+    case "3": 
+        alert("Você pediu agua gelada!");
+        break;
+
+        default:
+            alert("Ops, não temos essa opção!")
+            break;
+
+  }
 }
