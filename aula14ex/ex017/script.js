@@ -1,10 +1,10 @@
 function tabuada(){
     let num = document.getElementById('txtn')
     let tab = document.getElementById('seltab')
-    let n = Number(num.value)
     if (num.value.length == 0){
         window.alert('Porfavor, escolha outro numero!')
     } else {
+        let n = Number(num.value)
         let c = 1 
         tab.innerHTML = ''
         while (n <= 10){
