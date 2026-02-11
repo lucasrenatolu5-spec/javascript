@@ -1,21 +1,15 @@
 let numeros = document.getElementById('txtn')
 let lista = document.getElementById('numadd')
 let valores = []
-
+//function pra verificar se numero ja existe
 function jaExiste(n, valores){
-    for(let i = 1;i < valores.length; i++){
-        if(valores.indexOf(n) == i ){
-           window.alert('Numero invalido, ou ja se encontra na lista')
-        }
-    }
+        return valores.indexOf(n) != -1
 }
-jaExiste(valores = Number(n.value))
-
 //function pra adicionar numero na lista
 function numero(){ 
-    n = Number(numeros.value)
-    let item = document.createElement('option')
-    if (n <= 100 && n > 0) {
+    let n = Number(numeros.value)
+    if (n <= 100 && n > 0 && !jaExiste(n, valores)) {
+        let item = document.createElement('option')
         lista.appendChild(item)
         valores.push(n)
         item.text = `Adicionado ${n}`
