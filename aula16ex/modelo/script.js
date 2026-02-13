@@ -26,6 +26,8 @@ function numero(){
     } else {
         window.alert('Numero invalido, ou ja se encontra na lista')
     }
+    numeros.value = ""
+    numeros.focus()
 }
 
 function somarTudo(){
@@ -38,18 +40,24 @@ function somarTudo(){
 }
 
 function finalizar(){
-    let maior = pegarMaior()
-    let menor = pegarMenor()
-    let res = document.getElementById('res') 
-    let total = somarTudo()   
-    let media = total / valores.length
-    let texto = `
-    Somando todos os valores, temos ${total}. <br><br>
-    Ao todo, temos ${valores.length} números cadastrados. <br><br>
-    A média dos valores digitados é ${media}. <br><br>
-    O maior valor encontrado foi ${maior}.
+    if(valores.length == 0){
+        window.alert('adicione valores antes de finalizar')
+    } else {
+        let maior = pegarMaior()
+        let menor = pegarMenor()
+        let res = document.getElementById('res') 
+        let total = somarTudo()   
+        let media = total / valores.length
+        let texto = `
+        Somando todos os valores, temos ${total}. <br><br>
+        Ao todo, temos ${valores.length} números cadastrados. <br><br>
+        A média dos valores digitados é ${media}. <br><br>
+        O maior valor encontrado foi ${maior}.<br><br>
+        O menor valor encontrado foi ${menor}.
     `
     res.innerHTML = texto
+    }
+    
 }
 
 function pegarMaior(){
