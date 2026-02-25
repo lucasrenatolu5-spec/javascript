@@ -10,11 +10,6 @@ header{
     text-align: center;
 }
 
-select{
-    width: 150px;
-    display: block;
-}
-
 section{
     background-color: white;
     border-radius: 10px;
@@ -24,13 +19,9 @@ section{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.377);
 }
 
+
 footer{
     color: white;
     text-align: center;
     font-style: italic;
-}
-
-#pedra p{
-    background-color: black;
-    box-shadow: 1px 2px 5px black;
 }
