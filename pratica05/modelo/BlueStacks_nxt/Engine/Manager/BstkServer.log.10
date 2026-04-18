@@ -1,0 +1,52 @@
+00:00:00.015344 main     VirtualBox COM Server 6.1.36 r156792 win.amd64 (Nov 27 2025 15:30:00) release log
+00:00:00.015347 main     Log opened 2026-03-22T19:11:51.419362900Z
+00:00:00.015354 main     Local Time 16:11:51
+00:00:00.015355 main     Build Type: release
+00:00:00.015363 main     OS Product: Windows 11
+00:00:00.015364 main     OS Release: 10.0.26200
+00:00:00.015364 main     OS Service Pack: 
+00:00:00.033245 main     DMI Product Name: MCR-A520M-DXV4
+00:00:00.043072 main     DMI Product Version: V1.0
+00:00:00.043081 main     Firmware type: UEFI
+00:00:00.043421 main     Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:00.043446 main     Host RAM: 15766MB (15.3GB) total, 7778MB (7.5GB) available
+00:00:00.043450 main     Executable: C:\Program Files\BlueStacks_nxt\BstkSVC.exe
+00:00:00.043450 main     Process ID: 2636
+00:00:00.043450 main     Package type: WINDOWS_64BITS_GENERIC (OSE)
+00:00:00.046378          VirtualBox: object creation starts
+00:00:00.046701          Home directory: 'C:\ProgramData\BlueStacks_nxt\Engine\Manager'
+00:00:00.046881          Installed Drivers:
+00:00:00.071118          Loading settings file "C:\ProgramData\BlueStacks_nxt\Engine\Manager\BstkGlobal.xml" with version "1.12-windows"
+00:00:00.088721          netIfGetBoundAdapters: could not find either 'oracle_VBoxNetLwf' or 'sun_VBoxNetFlt' components (0x1)
+00:00:00.091285          HostDnsMonitor: initializing
+00:00:00.096258          HostDnsMonitor: updating information
+00:00:00.096299          HostDnsMonitor: old information
+00:00:00.096304            no server entries
+00:00:00.096307            no domain set
+00:00:00.096310            no search string entries
+00:00:00.096312          HostDnsMonitor: new information
+00:00:00.096315            server 1: 192.168.18.1
+00:00:00.096318            no domain set
+00:00:00.096320            no search string entries
+00:00:00.140198          VD: VDInit finished with VINF_SUCCESS
+00:00:00.154194          Loading settings file "C:\ProgramData\BlueStacks_nxt\Engine\Pie64\Pie64.bstk" with version "1.19-windows"
+00:00:00.161114          VirtualBox: object created
+00:00:00.340165          vhdxOpen pszFilename="C:\ProgramData\BlueStacks_nxt\Engine\Pie64\Data.vhdx" uOpenFlags=0x8 pVDIfsDisk=0x000255f20543b8 pVDIfsImage=0x000255f00880d8 enmType=1 ppBackendData=0x000255f00880b0
+00:00:00.340184          vhdxOpenImage flags requested: (0x8)
+00:00:00.351750          vhdxFindAndLoadCurrentHeader header 1 is valid.
+00:00:00.351788          vhdxParseLog: Log UUId is zero, nothing to replay.
+00:00:00.352903          vhdxOpenImage returns rc=VINF_SUCCESS
+00:00:00.352927          Image logicalSector:(2564095476224) session_uid:(949600899440) disk_size:(137438953472) block_size:(1048576) current_header_num:(1) chunkratio:4096.
+00:00:00.352933          vhdxOpen returns VINF_SUCCESS (pBackendData=0x000255f2040f40)
+00:25:41.787644 dns-monitor HostDnsMonitor: updating information
+00:25:41.787737 dns-monitor HostDnsMonitor: unchanged
+00:55:06.297679 dns-monitor HostDnsMonitor: updating information
+00:55:06.297769 dns-monitor HostDnsMonitor: unchanged
+00:55:33.184169          Saving settings file "C:\ProgramData\BlueStacks_nxt\Engine\Pie64\Pie64.bstk" with version "1.19-windows"
+00:55:33.192620          Finished saving settings file "C:\ProgramData\BlueStacks_nxt\Engine\Pie64\Pie64.bstk"
+00:55:33.301274 main     VirtualBox: object deletion starts
+00:55:33.304631 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ddfdbdfb-08e0-4e8c-adcc-e5d2c56ab1a3} aComponent={MediumWrap} aText={Medium 'C:\ProgramData\BlueStacks_nxt\Engine\Pie64\Data.vhdx' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:55:33.314106 main     HostDnsMonitor: shutting down ...
+00:55:33.314184 main     HostDnsMonitor: shut down
+00:55:33.315208 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={149c167e-c74b-4fbd-a0c6-544278699851} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:55:33.316947 main     VirtualBox: object deleted
